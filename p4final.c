@@ -3,14 +3,14 @@
 int input_array_size()
 {
   int b;
-  printf("Enter the length of the array:\n");
+  printf("Enter the size of the array:\n");
   scanf("%d",&b);
   return b;
 }
 
 void input_array(int n, int a[n])
 {
-  printf("Enter all values of the array\n");
+  printf("Enter values of the array\n");
   for (int i=0;i<n;i++)
   {
     scanf("%d",&a[i]);
