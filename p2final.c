@@ -1,20 +1,20 @@
 #include<stdio.h>
 int input_side()
-{ int n;
+{ int k;
   printf("enter the values for the sides of triangle\n");
-  scanf("%d",&n);
-  return n;
+  scanf("%d",&k);
+  return k;
 }
-int check_scalene(int a, int b, int c)
+int check_scalene(int x, int y, int z)
 {
-  if(a!=b && b!=c && a!=c)
+  if(x!=y && y!=z && x!=z)
   {
     return 1;
   }
   return 0;
 }
 
-void output(int a, int b, int c, int isscalene)
+void output(int x, int y, int z, int isscalene)
 {
   if(isscalene==0)
   {
@@ -27,11 +27,11 @@ void output(int a, int b, int c, int isscalene)
 }
 int main()
 {
-  int a,b,c,isscalene;
-  a=input_side();
-  b=input_side();
-  c=input_side();
-  isscalene=check_scalene(a,b,c);
-  output(a,b,c,isscalene);
+  int x,y,z,isscalene;
+  x=input_side();
+  y=input_side();
+  z=input_side();
+  isscalene=check_scalene(x,y,z);
+  output(x,y,z,isscalene);
   return 0;
 }
