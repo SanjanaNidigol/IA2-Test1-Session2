@@ -18,7 +18,7 @@ void output(int x, int y, int z, int isscalene)
 {
   if(isscalene==0)
   {
-    printf("is not a scalence triangle\n");
+    printf("is not a scalene triangle\n");
   }
    else
    {
