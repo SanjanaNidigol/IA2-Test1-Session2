@@ -1,10 +1,10 @@
 #include <stdio.h>
 int input_number()
 {
-  int x;
+  int k;
   printf("Enter a number\n");
-  scanf("%d",&x);
-  return x;
+  scanf("%d",&k);
+  return k;
 }
 int is_composite(int n)
 {
@@ -18,9 +18,9 @@ int is_composite(int n)
 void output(int n, int iscomposite)
 {
   if (iscomposite)
-    printf("%d is a composite number\n",n);
+    printf("%d is a composite num\n",n);
   else 
-    printf("%d is not a composite number\n",n);
+    printf("%d is not a composite num ie prime num\n",n);
 }
 int main()
 {
