@@ -1,3 +1,48 @@
+#include<stdio.h>
+int input()
+{
+  int k;
+  printf("enter any number\n");
+  scanf("%d",&k);
+  return k;
+}
+int gcd(int a,int b)
+{
+  int gcd;
+  for(int i=2;i<a && i<b;i++)
+  {
+    if(a%i==0 && b%i==0)
+    {
+      gcd=i;
+    }
+  }
+  return gcd;
+}
+void output(int a,int b,int gcd)
+{
+  printf("gcd of %d and %d is %d",a,b,gcd);
+}
+int main()
+{
+  int a,b,result;
+  a=input();
+  b=input();
+  result=gcd(a,b);
+  output(a,b,result);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*#include <stdio.h>
 int input()
 {
@@ -43,35 +88,3 @@ int main()
   return 0;
 }
 */
-#include<stdio.h>
-int input()
-{
-  int a;
-  printf("enter any number\n");
-  scanf("%d",&a);
-  return a;
-}
-int gcd(int a,int b)
-{
-  int gcd;
-  for(int i=2;i<a && i<b;i++)
-  {
-    if(a%i==0 && b%i==0)
-    {
-      gcd=i;
-    }
-  }
-  return gcd;
-}
-void output(int a,int b,int hcf)
-{
-  printf("gcd of %d and %d is %d",a,b,hcf);
-}
-int main()
-{
-  int a,b,res;
-  a=input();
-  b=input();
-  res=gcd(a,b);
-  output(a,b,res);
-}
